@@ -1,18 +1,12 @@
 {
   "name": "appfyf",
   "version": "1.0.0",
-  "main": "js/main.js",
+  "main": "main.js",
   "scripts": {
-    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "Voon",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "electron": "^31.3.0"
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.3"
-  }
+  "description": ""
 }
