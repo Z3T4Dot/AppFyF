@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url("/assets/img/background.avif");
+    background: url("/app/assets/img/background.avif");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
