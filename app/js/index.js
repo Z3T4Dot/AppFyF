@@ -1,4 +1,4 @@
-document.getElementById("register-form").addEventListener("submit", (e) => {
+document.getElementById("register-forms").addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log(e.target.children.user)
+    console.log(e)
 })
