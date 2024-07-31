@@ -4,6 +4,9 @@ import path from 'path';
 import {fileURLToPath} from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+//Metodos
+import {methods as authentication} from './controllers/authentication.controller.js';
+
 //Server
 const app = express();
 app.set("port", 4000);
@@ -15,4 +18,7 @@ app.use(express.static(__dirname +"/css"))
 
 //Rutas
 app.get("/", (req,res)=> res.sendFile(__dirname + "/app/pages/index.html"));
-app.get("/admin", (req,res)=> res.sendFile(__dirname + "/app/pages/admin/administracion.html"));
+app.get("/login", (req,res)=> res.sendFile(__dirname + "/app/pages/index.html"));
+app.get("/register", (req,res)=> res.sendFile(__dirname + "/app/pages/index.html"));
+app.post("/api/login", authentication.login);
+app.post("/api/register/", authentication.register);
